@@ -1539,6 +1539,31 @@ video {
 }
 
 @media (max-width: 560px) {
+  .gate {
+    min-height: 100dvh;
+    height: 100dvh;
+    place-items: start center;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: max(0.75rem, env(safe-area-inset-top)) 0.75rem max(1.25rem, env(safe-area-inset-bottom));
+  }
+
+  .gate-shell {
+    padding: 0.65rem;
+  }
+
+  .gate-intro {
+    min-height: 15rem;
+  }
+
+  .quiz-panel {
+    padding: 0.85rem;
+  }
+
+  .question-photo {
+    height: clamp(10rem, 32vh, 14rem);
+  }
+
   .answers {
     grid-template-columns: 1fr;
   }
