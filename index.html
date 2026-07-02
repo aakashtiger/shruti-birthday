@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Happy Birthday, Shruti</title>
+    <meta name="description" content="A birthday website for Shruti Sharma.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+    <section class="envelope-reveal hidden" id="envelopeReveal" aria-live="polite">
+      <div class="spark-field" aria-hidden="true"></div>
+      <div class="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-card">
+          <p>For Shruti</p>
+          <h2>Happy Birthday, Shruti</h2>
+          <span>Your birthday world is opening...</span>
+        </div>
+        <div class="envelope-front"></div>
+      </div>
+    </section>
+    <section class="gift-reveal hidden" id="giftReveal" aria-live="polite">
+      <div class="spark-field" aria-hidden="true"></div>
+      <div class="mini-envelope">
+        <div class="mini-envelope-flap"></div>
+        <div class="mini-envelope-card">
+          <p id="giftRevealLabel">Opening your surprise</p>
+        </div>
+        <div class="mini-envelope-front"></div>
+      </div>
+    </section>
+
+    <main>
+      <section class="gate" id="gate" aria-labelledby="gateTitle">
+        <div class="gate-shell">
+          <div class="gate-intro">
+            <p class="kicker">3 July 2026</p>
+            <h1 id="gateTitle">Entry only for Shruti Sharma</h1>
+            <p class="gate-copy">
+              Five tiny checks before your birthday surprise opens. Answer like the queen you are.
+            </p>
+          </div>
+
+          <div class="quiz-panel" id="quizPanel">
+            <div class="question-photo">
+              <img id="questionImage" src="assets/photos/photo-1.jpg" alt="">
+            </div>
+            <div class="progress" aria-label="Question progress">
+              <span id="questionCount">1 / 5</span>
+              <div class="progress-track">
+                <span id="progressFill"></span>
+              </div>
+            </div>
+            <h2 id="questionText"></h2>
+            <div class="answers" id="answers"></div>
+            <p class="quiz-note" id="quizNote" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="site hidden" id="birthdaySite" aria-label="Birthday website">
+        <header class="hero">
+          <div class="hero-collage" aria-hidden="true">
+            <img class="collage-photo collage-photo-one" src="assets/photos/2026_latest.jpg" alt="">
+            <img class="collage-photo collage-photo-two" src="assets/photos/2025_vietnamtrip1.jpeg" alt="">
+            <img class="collage-photo collage-photo-three" src="assets/photos/2025_from our honemoon.jpeg" alt="">
+            <img class="collage-photo collage-photo-four" src="assets/photos/2024_that pune trip.jpeg" alt="">
+            <img class="collage-photo collage-photo-five" src="assets/photos/2023_1 (After we met).jpeg" alt="">
+          </div>
+          <div class="hero-glow" aria-hidden="true"></div>
+          <div class="hero-content">
+            <p class="kicker">For my wife, my favorite person</p>
+            <h1>Happy Birthday, Shruti</h1>
+            <p class="hero-line">
+              31 looks beautiful on you. Stylish, soft-hearted, funny, emotional, a little dramatic,
+              and completely impossible not to love.
+            </p>
+          </div>
+          <div class="scroll-cue" id="scrollCue">
+            <span>Scroll down</span>
+            <strong>Open your envelopes</strong>
+          </div>
+
+          <div class="hero-stats" aria-label="Important dates">
+            <div>
+              <span>3 July 1995</span>
+              <small>The day the world got Shruti</small>
+            </div>
+            <div>
+              <span>21 February 2025</span>
+              <small>The day you became my wife, and life became more real.</small>
+            </div>
+            <div>
+              <span>Vietnam</span>
+              <small>Our first international trip together</small>
+            </div>
+          </div>
+        </header>
+
+        <section class="banner" aria-label="Birthday banner">
+          <div class="marquee">
+            <span>Happy Birthday Shruti</span>
+            <span>Happy Birthday Shruti</span>
+            <span>Happy Birthday Shruti</span>
+          </div>
+        </section>
+
+        <section class="gift-board" id="envelopes" aria-label="Birthday surprises">
+          <div class="gift-board-head">
+            <p class="kicker">Open your surprises</p>
+            <h2>Six envelopes. One birthday universe.</h2>
+          </div>
+          <div class="gift-grid">
+            <button class="gift-card hot" type="button" data-gift="journey">
+              <span>01</span>
+              <strong>Your journey</strong>
+              <small>From tiny Shruti to birthday queen</small>
+            </button>
+            <button class="gift-card teal" type="button" data-gift="song">
+              <span>02</span>
+              <strong>Your song</strong>
+              <small>A track made only for you</small>
+            </button>
+            <button class="gift-card plum" type="button" data-gift="wishes">
+              <span>03</span>
+              <strong>Birthday film</strong>
+              <small>Messages from your people</small>
+            </button>
+            <button class="gift-card gold" type="button" data-gift="likes">
+              <span>04</span>
+              <strong>Why I love you</strong>
+              <small>The very incomplete list</small>
+            </button>
+            <button class="gift-card sky" type="button" data-gift="future">
+              <span>05</span>
+              <strong>Our future</strong>
+              <small>Places, plans, and tiny rituals</small>
+            </button>
+            <button class="gift-card rose" type="button" data-gift="promises">
+              <span>06</span>
+              <strong>My promises</strong>
+              <small>Quiet, real, and from the heart</small>
+            </button>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <p>Happy 31st birthday, Shruti. You are loved. Very much. By me, obviously.</p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
